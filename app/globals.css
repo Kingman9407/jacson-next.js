@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Base layer resets */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Default body font: Inter */
+  body {
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  /* Default heading font: Inter (override via class) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  /* Playfair utility class */
+  .font-playfair {
+    font-family: var(--font-playfair), serif;
+  }
+}
